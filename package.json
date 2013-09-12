@@ -1,0 +1,20 @@
+{
+  "name": "chucknorris",
+  "version": "0.0.1",
+  "description": "Gets all the chucknorris facts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chucknorris"
+  ],
+  "dependencies": {
+    "cheerio": "~0.12.2",
+    "request": "~2.27.0",
+    "async": "~0.2.9",
+    "underscore": "~1.5.2"
+  },
+  "author": "J.W. Lagendijk",
+  "license": "MIT"
+}
