@@ -32,7 +32,7 @@ function getLastPageNumber (callback) {
 
     if (!isNaN(lastPageNum)){
       console.log('PAGES: ' + lastPageNum);
-      callback(200);
+      callback(lastPageNum);
     }
 
   });
