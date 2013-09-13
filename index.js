@@ -1,7 +1,5 @@
 // Based on https://github.com/neilkod/chucknorrisfacts/blob/master/chuck_norris_facts.py
 
-// test
-
 // REQUIRES
 var request = require('request'),
     cheerio = require('cheerio'),
