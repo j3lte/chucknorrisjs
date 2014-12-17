@@ -14,7 +14,9 @@ var _facts = [],
     done = 0,
     last = 0,
     outputFilename = 'chucknorris.json',
-    CONCURRENT_REQUESTS = 20;
+    CONCURRENT_REQUESTS = 10; // max 10
+
+require('http').globalAgent.maxSockets = CONCURRENT_REQUESTS;
 
 // INITIALIZE
 getLastPageNumber(getPages);
@@ -100,7 +102,7 @@ function getPage (pagenum, callback) {
         });
 
         done++;
-        console.log('DONE : ' + ((done / last) * 100).toFixed(2) + ' % || Processed page: ' + pagenum);
+        console.log('DONE : ' + ((done / last) * 100).toFixed(2) + ' % || Processed page: ' + pagenum + ' || facts collected: ' + _facts.length);
         callback();
 
     });
